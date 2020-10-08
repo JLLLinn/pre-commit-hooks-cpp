@@ -10,12 +10,12 @@
   description: Check style of C code using cpplint.
   language: python
   files: \.(c|cc|cxx|cpp|h|hpp|hxx)$
-  entry: cpplint --std=c++11 
+  entry: cpplint
   args: ["--verbose=3"]
 - id: cppcheck
   name: cppcheck
   description: Check correctness of C code using cppcheck.
   language: system
   files: \.(c|cc|cxx|cpp|h|hpp|hxx)$
-  entry: cppcheck --error-exitcode=1
+  entry: cppcheck --error-exitcode=1 --std=c++11 
   args: ["--enable=warning"]
