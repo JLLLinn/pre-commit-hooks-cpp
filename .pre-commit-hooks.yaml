@@ -10,7 +10,7 @@
   description: Check style of C code using cpplint.
   language: python
   files: \.(c|cc|cxx|cpp|h|hpp|hxx)$
-  entry: cpplint
+  entry: cpplint --std=c++11 
   args: ["--verbose=3"]
 - id: cppcheck
   name: cppcheck
