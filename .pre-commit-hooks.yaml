@@ -17,5 +17,5 @@
   description: Check correctness of C code using cppcheck.
   language: system
   files: \.(c|cc|cxx|cpp|h|hpp|hxx)$
-  entry: cppcheck --error-exitcode=1 --language=c++
+  entry: cppcheck --error-exitcode=1 --language=c++ --library=googletest
   args: ["--enable=warning"]
